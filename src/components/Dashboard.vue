@@ -1,6 +1,6 @@
 <template>
   <div id="burger-table" v-if="burgers">
-    <Message :msg="msg" :msgId="msgId" v-show="msg"/>
+    <Message :msg="msg" :idBurger="idBurger" v-show="msg"/>
     <div>
       <div id="burger-table-heading">
         <div class="order-id">#:</div>
@@ -48,8 +48,8 @@
         burgers: null,
         burger_id: null,
         status: [],
-        msg: null,
-        msgId: 0
+        msg: 0,
+        idBurger: 0
       }
     },
     components:{
@@ -84,6 +84,11 @@
 
         const res = await req.json()
 
+        this.msg = 5
+        this.idBurger = id
+
+        setTimeout(() => this.msg = 0, 3000);
+
         this.getPedidos()
 
       },
@@ -92,7 +97,7 @@
         const option = event.target.value;
 
         const dataJson = JSON.stringify({status: option});
-
+        
         const req = await fetch(`http://localhost:3000/burgers/${id}`, {
           method: "PATCH",
           headers: { "Content-Type" : "application/json" },
@@ -101,8 +106,23 @@
 
         const res = await req.json()
 
-        console.log(res)
+        console.log(res.status)
 
+        if(res.status == "Em produção" ){
+          this.msg = 2
+          this.idBurger = id
+          setTimeout(() => this.msg = 0, 3000);
+        }
+        else if(res.status == "Finalizado" ){
+          this.msg = 3
+          this.idBurger = id
+          setTimeout(() => this.msg = 0, 3000);
+        }
+        else if(res.status == "Solicitado" ){
+          this.msg = 4
+          this.idBurger = id
+          setTimeout(() => this.msg = 0, 3000);
+        }
       }
     },
     mounted () {
