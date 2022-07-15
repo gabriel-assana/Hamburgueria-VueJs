@@ -6,7 +6,6 @@
 <p align="center">
   Aplicação desenvolvida em Vue.js, que simula a criação de pedidos de uma Hamburgueria.
 </p>
-</br>
 
 <h1 align="center">
   <img alt="logo" title="#logo" src="./src/assets/gorestaurant.gif" />
@@ -60,7 +59,7 @@ $ npm run server
 
 ```bash
 # Acesse a pasta do projeto no terminal/cmd
-$ cd GoRestaurant
+$ cd Hamburgueria-VueJs
 # Abra um novo terminal e execute a aplicação em modo de desenvolvimento
 $ yarn dev
 # O servidor do front-end inciará na porta:3000 - acesse <http://localhost:3000>
