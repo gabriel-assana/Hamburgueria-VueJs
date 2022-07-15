@@ -4,12 +4,9 @@
 
 <h2 align="center" >Descrição do Projeto</h2>
 <p align="center">
- Aplicação desenvolvida 
+  Aplicação desenvolvida em Vue.js, que simula a criação de pedidos de uma Hamburgueria.
 </p>
 </br>
-<p align="center">
-  Desafio tem como principal objetivo realizar a conversão de uma aplicação que se encontra em JavaScript para Typescript.
-</p>  
 
 <h1 align="center">
   <img alt="logo" title="#logo" src="./src/assets/gorestaurant.gif" />
@@ -17,10 +14,11 @@
 
 ## 🔎 Features
 
-- [x] Criar um novo prato.
-- [x] Editar imagem, titulo, valor e descrição dos pratos.
-- [x] Exclusão dos pratos
-- [x] Deixar pratos disponiveis ou indisponiveis.
+- [x] Criação de pedidos.
+- [x] Alterações dos status dos pedidos.
+- [x] Mensagens de feedback.
+- [] Alteração dos pedidos.
+- [] Exclusão dos pedidos.
 
 ## :rocket: Tecnologias
 
