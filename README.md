@@ -8,7 +8,7 @@
 </p>
 
 <h1 align="center">
-  <img alt="logo" title="#logo" src="./src/assets/gorestaurant.gif" />
+  <img alt="logo" title="#logo" src="./src/assets/hamburgueria.gif" />
 </h1>
 
 ## 🔎 Features
@@ -51,7 +51,7 @@ $ git clone https://github.com/gabriel-assana/Hamburgueria-VueJs
 # Instale as dependências
 $ npm install
 # Execute a aplicação em modo de desenvolvimento
-$ npm run server
+$ npm run backend
 # O servidor do back-end inciará na porta:8080 - acesse <http://localhost:8080>
 ```
 
@@ -61,5 +61,5 @@ $ npm run server
 # Acesse a pasta do projeto no terminal/cmd
 $ cd Hamburgueria-VueJs
 # Abra um novo terminal e execute a aplicação em modo de desenvolvimento
-$ yarn dev
+$ npm run server
 # O servidor do front-end inciará na porta:3000 - acesse <http://localhost:3000>
