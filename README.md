@@ -17,8 +17,8 @@
 - [x] Criação de pedidos.
 - [x] Alterações dos status dos pedidos.
 - [x] Mensagens de feedback.
-- [] Alteração dos pedidos.
-- [] Exclusão dos pedidos.
+- [ ] Alteração dos pedidos.
+- [ ] Exclusão dos pedidos.
 
 ## :rocket: Tecnologias
 
